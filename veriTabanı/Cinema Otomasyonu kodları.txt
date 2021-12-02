@@ -1,0 +1,74 @@
+
+// Gereken Tablolar
+// müşteri  ok
+// personel ok
+// salon  ok
+// film
+// bilet!!!!!!  ok
+//seans  ok
+//yiyecek ok 
+//yiyecek fatura ok
+//
+
+
+
+Table musteri  {
+  musteriId int [pk,increment]
+  musteriAdi nvarchar(MAX)
+  musteriSoyadi nvarchar(MAX)
+  musteriCinsiyet nvarchar(MAX)
+}
+Table personel {
+  personelId int [pk,increment]
+  personelAdi nvarchar(MAX)
+  personelSoyadi nvarchar(MAX)
+  personelCinsiyet nvarchar(MAX)
+}
+Table salon {
+  salonId int [pk,increment]
+  koltukSayisi int [not null]
+  salonTuru int 
+}
+Table seans {
+ seansId int [pk,increment]
+ seansSaati datetime
+ seansDili int [not null]
+ seansSalonu int [not null]
+ filmId int [not null]
+ seansiOlusturan int [not null]
+ fiyat int [not null]
+}
+Ref : salon.salonId > seans.seansSalonu
+Ref : film.filmId > seans.filmId
+Ref : personel.personelId > seans.seansiOlusturan
+ 
+Table bilet {
+  biletId int [pk,increment]
+  biletiKesen int [not null]
+  musteriId int [not null]
+  seansId int [not null]
+  odemeYontemi int [not null]
+  
+}
+Ref : personel.personelId > bilet.biletiKesen
+Ref : musteri.musteriId > bilet.musteriId
+Ref : seans.seansId > bilet.seansId
+
+Table yiyecek {
+  yiyecekId int [pk,increment]
+  yiyecekAdi nvarchar(MAX)
+  yiyecekFiyati nvarchar(MAX)
+}
+Table yiyecekFatura{
+  alanMusteriId int [not null]
+  alinanYiyecekId int [not null]
+  biletId int [not null]
+}
+Ref : musteri.musteriId > yiyecekFatura.alanMusteriId
+Ref : yiyecekFatura.alinanYiyecekId > yiyecek.yiyecekId
+Ref : bilet.biletId > yiyecekFatura.biletId
+
+Table film {
+  filmId int [pk,increment]
+  filAdi nvarchar (MAX)
+}
