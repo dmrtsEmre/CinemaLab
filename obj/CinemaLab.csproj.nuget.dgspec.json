@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emred\\OneDrive\\Masaüstü\\CinemaLab\\CinemaLab.csproj": {}
+    "C:\\Users\\Buraq\\Desktop\\CinemaLab\\CinemaLab.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emred\\OneDrive\\Masaüstü\\CinemaLab\\CinemaLab.csproj": {
+    "C:\\Users\\Buraq\\Desktop\\CinemaLab\\CinemaLab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emred\\OneDrive\\Masaüstü\\CinemaLab\\CinemaLab.csproj",
+        "projectUniqueName": "C:\\Users\\Buraq\\Desktop\\CinemaLab\\CinemaLab.csproj",
         "projectName": "CinemaLab",
-        "projectPath": "C:\\Users\\emred\\OneDrive\\Masaüstü\\CinemaLab\\CinemaLab.csproj",
-        "packagesPath": "C:\\Users\\emred\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emred\\OneDrive\\Masaüstü\\CinemaLab\\obj\\",
+        "projectPath": "C:\\Users\\Buraq\\Desktop\\CinemaLab\\CinemaLab.csproj",
+        "packagesPath": "C:\\Users\\Buraq\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Buraq\\Desktop\\CinemaLab\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\emred\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Buraq\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -61,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
