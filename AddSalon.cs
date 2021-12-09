@@ -14,5 +14,10 @@ namespace CinemaLab
         {
             InitializeComponent();
         }
+
+        private void domainUpDown3_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
