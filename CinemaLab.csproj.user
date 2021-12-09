@@ -19,6 +19,9 @@
     <Compile Update="HomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="SellTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="splashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
