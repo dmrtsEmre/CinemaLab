@@ -75,7 +75,7 @@ namespace CinemaLab
             this.domainUpDown3.Name = "domainUpDown3";
             this.domainUpDown3.Size = new System.Drawing.Size(300, 19);
             this.domainUpDown3.TabIndex = 8;
-            this.domainUpDown3.Text = "domainUpDown3";
+            this.domainUpDown3.Text = "Bir salon seçiniz";
             this.domainUpDown3.SelectedItemChanged += new System.EventHandler(this.domainUpDown3_SelectedItemChanged);
             // 
             // AddSalon
