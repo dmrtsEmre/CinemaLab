@@ -16,6 +16,12 @@
     <Compile Update="AddSeans.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AdminOlusturma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="HomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -45,5 +45,11 @@ namespace CinemaLab
             Form yiyecek = new AddFood();
             yiyecek.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form bilet = new SellTicket();
+            bilet.Show();
+        }
     }
 }
