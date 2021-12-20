@@ -109,5 +109,14 @@ namespace CinemaLab.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DESKTOP-MRA2ETD.
+        /// </summary>
+        internal static string ServerName {
+            get {
+                return ResourceManager.GetString("ServerName", resourceCulture);
+            }
+        }
     }
 }

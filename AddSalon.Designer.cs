@@ -33,6 +33,7 @@ namespace CinemaLab
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.domainUpDown3 = new System.Windows.Forms.DomainUpDown();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,6 +59,7 @@ namespace CinemaLab
             this.button1.Text = "Ekle";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // domainUpDown3
             // 
@@ -76,13 +78,23 @@ namespace CinemaLab
             this.domainUpDown3.Size = new System.Drawing.Size(300, 19);
             this.domainUpDown3.TabIndex = 8;
             this.domainUpDown3.Text = "Bir salon seçiniz";
-            this.domainUpDown3.SelectedItemChanged += new System.EventHandler(this.domainUpDown3_SelectedItemChanged);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(292, 451);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(60, 15);
+            this.linkLabel1.TabIndex = 9;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "linkLabel1";
             // 
             // AddSalon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 447);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.domainUpDown3);
             this.Controls.Add(this.pictureBox1);
@@ -95,6 +107,7 @@ namespace CinemaLab
             this.Text = "AddSalon";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -103,5 +116,6 @@ namespace CinemaLab
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DomainUpDown domainUpDown3;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
