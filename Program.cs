@@ -7,22 +7,22 @@ using System.Windows.Forms;
 namespace CinemaLab
 {
 
-    //Global iþleme deðiþkenleri
+    //Global iï¿½leme deï¿½iï¿½kenleri
     class Config
     {
-        //Milisaniye cinsinden splashScreen'in ekranda kalma süresi. Debug ederken bunu düþürebilirsiniz 3s = 3000ms
+        //Milisaniye cinsinden splashScreen'in ekranda kalma sï¿½resi. Debug ederken bunu dï¿½ï¿½ï¿½rebilirsiniz 3s = 3000ms
         public static int splashScreenTimeout = 3000;
 
-        //Login sayfasýný yapan kiþi login baþarýlý olunca bunu deðiþtirmeli
+        //Login sayfasï¿½nï¿½ yapan kiï¿½i login baï¿½arï¿½lï¿½ olunca bunu deï¿½iï¿½tirmeli
         //0 Admin, 1: Personel
-        //Login sayfasýný bekleyene kadar bu iki variable ayný kalsýn
+        //Login sayfasï¿½nï¿½ bekleyene kadar bu iki variable aynï¿½ kalsï¿½n
         public static int account_type = 0;
 
-        //Login sayfasýný yapan kiþi login baþarýlý olunca bunu deðiþtirmeli
+        //Login sayfasï¿½nï¿½ yapan kiï¿½i login baï¿½arï¿½lï¿½ olunca bunu deï¿½iï¿½tirmeli
         public static string account_mail = "admin@admin.com";
 
         //Database url
-        public static string connection_string = "Data Source=" + Resources.ResourceManager.GetString("ServerName") + "\SQLEXPRESS; Initial Catalog=DataBase; Integrated Security=True";
+        public static string connection_string = "Data Source=" + Resources.ResourceManager.GetString("ServerName") + "\\SQLEXPRESS; Initial Catalog=DataBase; Integrated Security=True";
     }
 
     static class Program
