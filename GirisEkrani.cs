@@ -19,5 +19,10 @@ namespace CinemaLab
         {
 
         }
+
+        private void GirisEkrani_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

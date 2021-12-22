@@ -12,38 +12,60 @@ namespace CinemaLab
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form seanslar = new AddSeans();
-            seanslar.Show();
+
+            if(Config.account_type == 0)
+            {
+                Form seanslar = new AddSeans();
+                seanslar.Show();
+            }
+            else
+            {
+                MessageBox.Show("Giriş Başarısız");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form yiyecek = new AddFood();
-            yiyecek.Show();
+            if (Config.account_type == 0)
+            {
+                Form yiyecek = new AddFood();
+                yiyecek.Show();
+            }
+            else
+            {
+                MessageBox.Show("Bu İşlem İçin Yetkiniz Bulunmamaktadır.");
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form salonlar = new AddSalon();
-            salonlar.Show();
+            if (Config.account_type == 0)
+            {
+                Form salonlar = new AddSalon();
+                salonlar.Show();
+            }
+            else
+            {
+                MessageBox.Show("Bu İşlem İçin Yetkiniz Bulunmamaktadır.");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form personel = new AddPersonel();
-            personel.Show();
+            if (Config.account_type == 0)
+            {
+                Form personel = new AddPersonel();
+                personel.Show();
+            }
+            else
+            {
+                MessageBox.Show("Bu İşlem İçin Yetkiniz Bulunmamaktadır.");
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form seanslar = new AddSeans();
-            seanslar.Show();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Form yiyecek = new AddFood();
-            yiyecek.Show();
+            
         }
 
         private void button7_Click(object sender, EventArgs e)

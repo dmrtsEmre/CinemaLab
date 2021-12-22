@@ -22,7 +22,7 @@ namespace CinemaLab
         public static string account_mail = "admin@admin.com";
 
         //Database url
-        public static string connection_string = "Data Source=" + Resources.ResourceManager.GetString("ServerName") + "\SQLEXPRESS; Initial Catalog=DataBase; Integrated Security=True";
+        public static string connection_string = "Data Source=" + Resources.ResourceManager.GetString("ServerName") + "SQLEXPRESS; Initial Catalog=DataBase; Integrated Security=True";
     }
 
     static class Program
