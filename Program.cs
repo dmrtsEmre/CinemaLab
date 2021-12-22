@@ -11,7 +11,7 @@ namespace CinemaLab
     class Config
     {
         //Milisaniye cinsinden splashScreen'in ekranda kalma süresi. Debug ederken bunu düþürebilirsiniz 3s = 3000ms
-        public static int splashScreenTimeout = 3000;
+        public static int splashScreenTimeout = 500;
 
         //Login sayfasýný yapan kiþi login baþarýlý olunca bunu deðiþtirmeli
         //0 Admin, 1: Personel
@@ -22,7 +22,7 @@ namespace CinemaLab
         public static string account_mail = "admin@admin.com";
 
         //Database url
-        public static string connection_string = "Data Source=" + Resources.ResourceManager.GetString("ServerName") + "\SQLEXPRESS; Initial Catalog=DataBase; Integrated Security=True";
+        public static string connection_string = "Data Source=localhost\\SQLEXPRESS;Database=CinemaLab;Integrated Security=SSPI";
     }
 
     static class Program
