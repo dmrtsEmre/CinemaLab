@@ -93,6 +93,7 @@ namespace CinemaLab
             this.radioButton1.TabIndex = 2;
             this.radioButton1.Text = "Admin";
             this.radioButton1.UseVisualStyleBackColor = true;
+         
             // 
             // textBox1
             // 
