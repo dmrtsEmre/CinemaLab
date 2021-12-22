@@ -22,7 +22,7 @@ namespace CinemaLab
         public static string account_mail = "admin@admin.com";
 
         //Database url
-        public static string connection_string = "Data Source=localhost\\SQLEXPRESS;Database=CinemaLab;Integrated Security=SSPI";
+        public static string connection_string = "Data Source=localhost;Database=CinemaLab;Integrated Security=SSPI";
     }
 
     static class Program
