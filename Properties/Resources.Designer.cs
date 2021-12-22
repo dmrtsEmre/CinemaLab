@@ -111,7 +111,7 @@ namespace CinemaLab.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DESKTOP-MRA2ETD.
+        ///   Looks up a localized string similar to DESKTOP-QI382NQ.
         /// </summary>
         internal static string ServerName {
             get {

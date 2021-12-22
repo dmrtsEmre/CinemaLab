@@ -73,5 +73,15 @@ namespace CinemaLab
             Form bilet = new SellTicket();
             bilet.Show();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HomeScreen_Load(object sender, EventArgs e)
+        {
+            label5.Text = Config.account_mail;
+        }
     }
 }
