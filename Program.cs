@@ -13,12 +13,15 @@ namespace CinemaLab
         //Milisaniye cinsinden splashScreen'in ekranda kalma s�resi. Debug ederken bunu d���rebilirsiniz 3s = 3000ms
         public static int splashScreenTimeout = 500;
 
-        //Login sayfas�n� yapan ki�i login ba�ar�l� olunca bunu de�i�tirmeli
+        //Login sayfasını yapan kişi login başarılı olunca bunu değiştirmeli
         //0 Admin, 1: Personel
-        //Login sayfas�n� bekleyene kadar bu iki variable ayn� kals�n
+        //Login sayfasını bekleyene kadar bu üçvariable aynı kalsın
         public static int account_type = 0;
 
-        //Login sayfas�n� yapan ki�i login ba�ar�l� olunca bunu de�i�tirmeli
+        //[PersonelPrimaryKey] Login sayfasını yapan kişi login başarılı olunca bunu değiştirmeli
+        public static int account_id = 0;
+
+        //Login sayfasını yapan kişi login başarılı olunca bunu değiştirmeli
         public static string account_mail = "admin@admin.com";
 
         //Database url
