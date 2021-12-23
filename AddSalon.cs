@@ -47,7 +47,7 @@ namespace CinemaLab
                         }
                         insert.Parameters.AddWithValue("@salonTuru", salonTuru);
                         int result = insert.ExecuteNonQuery();
-
+                        conn.Close();
                         if (result < 0)
                         {
                             MessageBox.Show("Salon eklenirken bir hata oluştu", "Hata");
@@ -66,7 +66,7 @@ namespace CinemaLab
                     }
                 }
                 
-                conn.Close();
+                
             }
             else
             {

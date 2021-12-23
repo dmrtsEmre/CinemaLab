@@ -83,5 +83,31 @@ namespace CinemaLab
         {
             label5.Text = Config.account_mail;
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (Config.account_type == 0)
+            {
+                Form film = new AddFilm();
+                film.Show();
+            }
+            else
+            {
+                MessageBox.Show("Bu İşlem İçin Yetkiniz Bulunmamaktadır.");
+            }
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            if (Config.account_type == 0)
+            {
+                Form film = new AddFilm();
+                film.Show();
+            }
+            else
+            {
+                MessageBox.Show("Bu İşlem İçin Yetkiniz Bulunmamaktadır.");
+            }
+        }
     }
 }

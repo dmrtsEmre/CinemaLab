@@ -44,6 +44,8 @@ namespace CinemaLab
             this.button7 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -142,7 +144,7 @@ namespace CinemaLab
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(185, 46);
             this.button2.TabIndex = 7;
-            this.button2.Text = "Yiyecek Stok";
+            this.button2.Text = "Yiyecek ";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -157,7 +159,7 @@ namespace CinemaLab
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(185, 46);
             this.button3.TabIndex = 8;
-            this.button3.Text = "Personel Ekleme";
+            this.button3.Text = "Personel ";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -168,7 +170,7 @@ namespace CinemaLab
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(60, 365);
+            this.button4.Location = new System.Drawing.Point(60, 360);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(185, 46);
             this.button4.TabIndex = 8;
@@ -187,7 +189,7 @@ namespace CinemaLab
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(185, 46);
             this.button5.TabIndex = 9;
-            this.button5.Text = "Seanslar";
+            this.button5.Text = "Seanslar Ekranı";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -231,12 +233,43 @@ namespace CinemaLab
             this.label5.Text = "Ana Menü";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(38)))), ((int)(((byte)(57)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Location = new System.Drawing.Point(60, 549);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(185, 46);
+            this.button6.TabIndex = 14;
+            this.button6.Text = "Film ";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(38)))), ((int)(((byte)(57)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button8.Location = new System.Drawing.Point(525, 360);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(185, 46);
+            this.button8.TabIndex = 15;
+            this.button8.Text = "Koltuk Ekranı";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = false;
+            // 
             // HomeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(196)))), ((int)(((byte)(200)))));
             this.ClientSize = new System.Drawing.Size(1143, 705);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.button7);
@@ -282,5 +315,7 @@ namespace CinemaLab
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button8;
     }
 }
