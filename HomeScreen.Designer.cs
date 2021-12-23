@@ -125,7 +125,7 @@ namespace CinemaLab
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(60, 172);
+            this.button1.Location = new System.Drawing.Point(60, 170);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(185, 46);
             this.button1.TabIndex = 6;

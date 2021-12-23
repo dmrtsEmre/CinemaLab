@@ -18,9 +18,14 @@ namespace CinemaLab
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+
+        private void GirisEkrani_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             if (textBox1.Text == "")
             {
                 MessageBox.Show("Mail Boş Olamaz");
@@ -37,34 +42,27 @@ namespace CinemaLab
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    if (reader.GetString("personelSifre")==textBox2.Text)
+                    if (reader.GetString("personelSifre") == textBox2.Text)
                     {
                         Config.account_type = reader.GetInt32("personelTip");
                         Config.account_id = reader.GetInt32("personelId");
                         Config.account_mail = reader.GetString("personelMail");
 
-                        Application.Run(new HomeScreen());
-
+                        Form main = new HomeScreen();
+                        main.Show();
+                        this.Close();
                     }
                     else
                     {
                         MessageBox.Show("Şifre yanlıştır.");
                     }
-
-                    MessageBox.Show("Mail mevcut", "Hata");
                 }
                 else
                 {
                     MessageBox.Show("Böyle Bir Hesap Bulunmamaktadır.");
                 }
-                
+
             }
-
-        }
-
-        private void GirisEkrani_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

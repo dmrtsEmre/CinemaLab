@@ -72,8 +72,6 @@ namespace CinemaLab
             {
                 MessageBox.Show("Verilen sinema salonu numarası bir rakam değil.", "Hata");
             }
-
-
         }
 
         private void AddSalon_Load(object sender, EventArgs e)

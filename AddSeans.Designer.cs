@@ -41,6 +41,8 @@ namespace CinemaLab
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +54,7 @@ namespace CinemaLab
             this.pictureBox1.Size = new System.Drawing.Size(1175, 750);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // comboBox1
             // 
@@ -67,8 +70,9 @@ namespace CinemaLab
             this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.Green;
             this.dateTimePicker1.Location = new System.Drawing.Point(84, 447);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(301, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(127, 23);
             this.dateTimePicker1.TabIndex = 3;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // button1
             // 
@@ -139,12 +143,34 @@ namespace CinemaLab
             this.listBox1.Size = new System.Drawing.Size(539, 304);
             this.listBox1.TabIndex = 6;
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CalendarTrailingForeColor = System.Drawing.Color.Green;
+            this.dateTimePicker2.Location = new System.Drawing.Point(258, 447);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(127, 23);
+            this.dateTimePicker2.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Montserrat SemiBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(174)))), ((int)(((byte)(174)))));
+            this.label1.Location = new System.Drawing.Point(258, 423);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 16);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Tarih";
+            // 
             // AddSeans
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.ClientSize = new System.Drawing.Size(1176, 747);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.textBox2);
@@ -179,5 +205,7 @@ namespace CinemaLab
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label1;
     }
 }

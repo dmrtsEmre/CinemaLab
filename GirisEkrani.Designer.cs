@@ -65,7 +65,6 @@ namespace CinemaLab
             this.label1.Size = new System.Drawing.Size(186, 40);
             this.label1.TabIndex = 1;
             this.label1.Text = "CinemaLab";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -124,6 +123,7 @@ namespace CinemaLab
             this.button1.TabIndex = 6;
             this.button1.Text = "Giriş";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 

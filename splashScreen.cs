@@ -19,7 +19,7 @@ namespace CinemaLab
         {
             //Program.cs'deki 'splashScreenTimeout' süresi kadar bekle ve HomeScreen'i aç
             await Task.Delay(Config.splashScreenTimeout);
-            Form main = new HomeScreen();
+            Form main = new GirisEkrani();
             main.Show();
             this.Hide();
         }        
