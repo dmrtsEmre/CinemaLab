@@ -12,7 +12,6 @@ namespace CinemaLab
 
 
         }
-
         private void button1_Click(object sender, System.EventArgs e)
         {
             
@@ -53,6 +52,20 @@ namespace CinemaLab
             }
 
             
+        }
+
+        private void AddFood_Load(object sender, System.EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(Config.connection_string);
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM yiyecek", conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                dataGridView1.Rows.Add(reader.GetString("yiyecekAdi").ToString(), reader.GetString("yiyecekFiyati").ToString() + "tl");
+            }
+            reader.Close();
+            conn.Close();
         }
     }
 }

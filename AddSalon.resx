@@ -61,7 +61,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABJkAAAJ3CAYAAAA3VIDjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAPR5JREFUeF7t3U+OrGeZ5mGWwA5gB3gHZgf2DmAH9gqMRwyxRwzBI4a4RniGB93C
+        DAAACwwBP0AiyAAAPR5JREFUeF7t3U+OrGeZ5mGWwA5gB3gHZgf2DmAH9gqMRwyxRwzBI4a4RniGB93C
         CCOORKlBZWFcdLdxVYmSKcklWzqDbN1Jvu7Xn5/4+0VEPhF5XdJPPudkZPxNn/jyzsg83/gf//PXd5Ik
         SZIkSdKajEySJEmSJElanZFJkiRJkiRJqzMySZIkSZIkaXVGJkmSJEmSJK3OyCRJkiRJkqTVGZkkSZIk
         SZK0OiOTJEmSJEmSVmdkkiRJkiRJ0uqMTJIkSZIkSVqdkUmSJEmSJEmrMzJJkiRJkiRpdUYmSZIkSZIk
@@ -325,4 +325,13 @@
         4Npcgv48+AkAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="dataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="dataGridViewTextBoxColumn2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="salonTuru.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

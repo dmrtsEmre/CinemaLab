@@ -41,11 +41,17 @@ namespace CinemaLab
             comboBox2.SelectedIndex = 0;
             film_reader.Close();
 
-            SqlCommand seans_cmd = new SqlCommand("SELECT * FROM seans INNER JOIN film ON film.filmId = seans.filmId", conn);
+            SqlCommand seans_cmd = new SqlCommand("SELECT * FROM seans INNER JOIN film ON film.filmId = seans.filmId INNER JOIN personel ON personel.personelId = seans.seansiOlusturan", conn);
             SqlDataReader seans_reader = seans_cmd.ExecuteReader();
             while (seans_reader.Read())
             {
-                listBox1.Items.Add("Seans Saati: " + seans_reader.GetDateTime("seansSaati").ToString("yyyy-MM-dd - HH:mm:ss") + " - Seans Dili: " + (seans_reader.GetInt32("seansDili") == 0 ? "Dublaj" : "Orijinal") + " - Film İsmi: " + seans_reader.GetString("filAdi").Split("=")[0]);
+                dataGridView1.Rows.Add(
+                        seans_reader.GetDateTime("seansSaati").ToString("yyyy-MM-dd - HH:mm:ss"),
+                        seans_reader.GetString("filAdi").Split("=")[0],
+                        seans_reader.GetString("personelMail"),
+                        (seans_reader.GetInt32("seansDili") == 0 ? "Dublaj" : "Orijinal"),
+                        "Salon " + seans_reader.GetInt32("seansSalonu")
+                    );
             }
         }
 
@@ -77,7 +83,7 @@ dateTimePicker1.Value.ToString("HH:mm:ss"));
                 insert.Parameters.AddWithValue("@fiyat", textBox2.Text);
                 int result = insert.ExecuteNonQuery();
                 conn.Close();
-                
+
                 if (result < 0)
                 {
                     MessageBox.Show("Seans eklemesi başarısız");

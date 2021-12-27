@@ -21,7 +21,12 @@ namespace CinemaLab
 
         private void GirisEkrani_Load(object sender, EventArgs e)
         {
-
+            if (Config.autoLogin)
+            {
+                textBox1.Text = Config.account_mail;
+                textBox2.Text = Config.account_pass;
+                button1_Click(0, EventArgs.Empty);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

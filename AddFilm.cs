@@ -1,6 +1,6 @@
-﻿using System.Windows.Forms;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Data;
+using System.Windows.Forms;
 
 namespace CinemaLab
 {
@@ -44,6 +44,22 @@ namespace CinemaLab
                     this.Close();
                 }
             }
+        }
+
+        private void AddFilm_Load(object sender, System.EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(Config.connection_string);
+            conn.Open();
+            SqlCommand seans_cmd = new SqlCommand("SELECT * FROM film", conn);
+            SqlDataReader seans_reader = seans_cmd.ExecuteReader();
+            while (seans_reader.Read())
+            {
+                dataGridView1.Rows.Add(
+                        seans_reader.GetString("filAdi").Split("=")[0],
+                        seans_reader.GetString("filAdi").Split("=")[1]
+                    );
+            }
+            conn.Close();
         }
     }
 }

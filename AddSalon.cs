@@ -82,11 +82,15 @@ namespace CinemaLab
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                string value = "Salon Numarası: " + reader.GetInt32("salonId").ToString() + " Salon Kapasitesi: " + reader.GetInt32("koltukSayisi").ToString() + " Salon Tipi: " + (reader.GetInt32("salonTuru") == 0 ? "3D" : "2D");
-                listBox2.Items.Add(value);
+                dataGridView1.Rows.Add(reader.GetInt32("salonId").ToString(), reader.GetInt32("koltukSayisi").ToString(), reader.GetInt32("salonTuru") == 0 ? "3D" : "2D");
             }
             reader.Close();
             conn.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -51,10 +51,17 @@ namespace CinemaLab
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.menuAd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuİsmi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuFiyat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Adet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fiyat = new System.Windows.Forms.Label();
+            this.button21 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -65,6 +72,7 @@ namespace CinemaLab
             this.pictureBox1.Size = new System.Drawing.Size(1173, 786);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
@@ -78,6 +86,7 @@ namespace CinemaLab
             this.button1.TabIndex = 1;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.koltukSec);
             // 
             // button2
             // 
@@ -91,6 +100,7 @@ namespace CinemaLab
             this.button2.TabIndex = 2;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.koltukSec);
             // 
             // button3
             // 
@@ -104,6 +114,7 @@ namespace CinemaLab
             this.button3.TabIndex = 3;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.koltukSec);
             // 
             // button4
             // 
@@ -117,6 +128,7 @@ namespace CinemaLab
             this.button4.TabIndex = 4;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.koltukSec);
             // 
             // button5
             // 
@@ -130,6 +142,7 @@ namespace CinemaLab
             this.button5.TabIndex = 5;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.koltukSec);
             // 
             // button6
             // 
@@ -143,6 +156,7 @@ namespace CinemaLab
             this.button6.TabIndex = 6;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.koltukSec);
             // 
             // button7
             // 
@@ -156,6 +170,7 @@ namespace CinemaLab
             this.button7.TabIndex = 7;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.koltukSec);
             // 
             // button8
             // 
@@ -169,6 +184,7 @@ namespace CinemaLab
             this.button8.TabIndex = 8;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.koltukSec);
             // 
             // button9
             // 
@@ -182,6 +198,7 @@ namespace CinemaLab
             this.button9.TabIndex = 9;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.koltukSec);
             // 
             // button10
             // 
@@ -195,6 +212,7 @@ namespace CinemaLab
             this.button10.TabIndex = 10;
             this.button10.Text = "10";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.koltukSec);
             // 
             // button11
             // 
@@ -208,6 +226,7 @@ namespace CinemaLab
             this.button11.TabIndex = 11;
             this.button11.Text = "11";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.koltukSec);
             // 
             // button12
             // 
@@ -221,6 +240,7 @@ namespace CinemaLab
             this.button12.TabIndex = 12;
             this.button12.Text = "12";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.koltukSec);
             // 
             // button13
             // 
@@ -234,6 +254,7 @@ namespace CinemaLab
             this.button13.TabIndex = 13;
             this.button13.Text = "13";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.koltukSec);
             // 
             // button14
             // 
@@ -247,6 +268,7 @@ namespace CinemaLab
             this.button14.TabIndex = 14;
             this.button14.Text = "14";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.koltukSec);
             // 
             // button15
             // 
@@ -260,6 +282,7 @@ namespace CinemaLab
             this.button15.TabIndex = 15;
             this.button15.Text = "15";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.koltukSec);
             // 
             // button16
             // 
@@ -273,6 +296,7 @@ namespace CinemaLab
             this.button16.TabIndex = 16;
             this.button16.Text = "16";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.koltukSec);
             // 
             // button17
             // 
@@ -286,6 +310,7 @@ namespace CinemaLab
             this.button17.TabIndex = 17;
             this.button17.Text = "17";
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.koltukSec);
             // 
             // button18
             // 
@@ -299,6 +324,7 @@ namespace CinemaLab
             this.button18.TabIndex = 18;
             this.button18.Text = "18";
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.koltukSec);
             // 
             // button19
             // 
@@ -312,6 +338,7 @@ namespace CinemaLab
             this.button19.TabIndex = 19;
             this.button19.Text = "19";
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.koltukSec);
             // 
             // button20
             // 
@@ -325,40 +352,110 @@ namespace CinemaLab
             this.button20.TabIndex = 20;
             this.button20.Text = "20";
             this.button20.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(60, 278);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 23);
-            this.textBox1.TabIndex = 21;
+            this.button20.Click += new System.EventHandler(this.koltukSec);
             // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(60, 370);
+            this.comboBox1.Items.AddRange(new object[] {
+            "Kart",
+            "Nakit"});
+            this.comboBox1.Location = new System.Drawing.Point(63, 354);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(340, 23);
             this.comboBox1.TabIndex = 22;
             // 
-            // comboBox2
+            // comboBox3
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(60, 466);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(340, 23);
-            this.comboBox2.TabIndex = 23;
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(63, 241);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(340, 23);
+            this.comboBox3.TabIndex = 24;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.menuAd,
+            this.menuİsmi,
+            this.menuFiyat,
+            this.Adet});
+            this.dataGridView1.Location = new System.Drawing.Point(63, 440);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(340, 150);
+            this.dataGridView1.TabIndex = 25;
+            // 
+            // menuAd
+            // 
+            this.menuAd.HeaderText = "GizliMenuAd";
+            this.menuAd.Name = "menuAd";
+            this.menuAd.ReadOnly = true;
+            this.menuAd.Visible = false;
+            // 
+            // menuİsmi
+            // 
+            this.menuİsmi.HeaderText = "Menü İsmi";
+            this.menuİsmi.Name = "menuİsmi";
+            this.menuİsmi.ReadOnly = true;
+            this.menuİsmi.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // menuFiyat
+            // 
+            this.menuFiyat.HeaderText = "Menü Fiyat";
+            this.menuFiyat.Name = "menuFiyat";
+            this.menuFiyat.ReadOnly = true;
+            this.menuFiyat.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Adet
+            // 
+            this.Adet.HeaderText = "Adet";
+            this.Adet.Name = "Adet";
+            // 
+            // fiyat
+            // 
+            this.fiyat.AutoSize = true;
+            this.fiyat.BackColor = System.Drawing.Color.White;
+            this.fiyat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.fiyat.Location = new System.Drawing.Point(225, 693);
+            this.fiyat.Name = "fiyat";
+            this.fiyat.Size = new System.Drawing.Size(28, 21);
+            this.fiyat.TabIndex = 26;
+            this.fiyat.Text = "0tl";
+            this.fiyat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(38)))), ((int)(((byte)(57)))));
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button21.ForeColor = System.Drawing.Color.White;
+            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.Location = new System.Drawing.Point(114, 667);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(272, 47);
+            this.button21.TabIndex = 27;
+            this.button21.Text = "Ödeme: ";
+            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // SellTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1166, 762);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.button21);
+            this.Controls.Add(this.fiyat);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button18);
@@ -386,7 +483,9 @@ namespace CinemaLab
             this.Name = "SellTicket";
             this.ShowIcon = false;
             this.Text = "SellTicker";
+            this.Load += new System.EventHandler(this.SellTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -418,5 +517,13 @@ namespace CinemaLab
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label fiyat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn menuAd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn menuİsmi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn menuFiyat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Adet;
+        private System.Windows.Forms.Button button21;
     }
 }

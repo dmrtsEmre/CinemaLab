@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Data;
 
 namespace CinemaLab
 {
@@ -13,7 +14,16 @@ namespace CinemaLab
 
         private void AddPersonel_Load(object sender, EventArgs e)
         {
-
+            SqlConnection conn = new SqlConnection(Config.connection_string);
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM personel", conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                dataGridView1.Rows.Add(reader.GetString("personelMail").ToString(), reader.GetString("personelSifre").ToString(), reader.GetInt32("personelTip") == 0 ? "Admin" : "Kasiyer");
+            }
+            reader.Close();
+            conn.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -89,9 +99,10 @@ namespace CinemaLab
 
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
-
-
+        }
     }
 }
 

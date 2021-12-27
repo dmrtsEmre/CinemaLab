@@ -13,16 +13,17 @@ namespace CinemaLab
         //Milisaniye cinsinden splashScreen'in ekranda kalma s�resi. Debug ederken bunu d���rebilirsiniz 3s = 3000ms
         public static int splashScreenTimeout = 500;
 
-        //Login sayfasını yapan kişi login başarılı olunca bunu değiştirmeli
+        //Altda belirtilen veriler ile otomatik giriş yap
+        public static bool autoLogin = false;
+
         //0 Admin, 1: Personel
-        //Login sayfasını bekleyene kadar bu üçvariable aynı kalsın
         public static int account_type = 0;
 
-        //[PersonelPrimaryKey] Login sayfasını yapan kişi login başarılı olunca bunu değiştirmeli
         public static int account_id = 0;
 
-        //Login sayfasını yapan kişi login başarılı olunca bunu değiştirmeli
-        public static string account_mail = "admin@admin.com";
+        public static string account_mail = "ahmet@admin.com";
+        public static string account_pass= "1234";
+
 
         //Database url
         public static string connection_string = "Data Source=localhost\\SQLEXPRESS;Database=CinemaLab;Integrated Security=SSPI";

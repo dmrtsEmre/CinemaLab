@@ -64,7 +64,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABJkAAAMSCAYAAADJGhW+AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAASqNJREFUeF7t3c+Oq2eZ9m02gT1o9gD2APaA7AHsAWxByCjDwCjDkFF6FmZhlgy+
+        DAAACwwBP0AiyAAASqNJREFUeF7t3c+Oq2eZ9m02gT1o9gD2APaA7AHsAWxByCjDwCjDkFF6FmZhlgy+
         TwE1KEvq1hvUEWQ13/uSdLdohZZoJVIG9ems1M175+Gy/diPXeuy6zikn7Lqn8vl8rIfn8tV+cb/8//+
         +k6SJEmSJEnakpFJkiRJkiRJmzMySZIkSZIkaXNGJkmSJEmSJG3OyCRJkiRJkqTNGZkkSZIkSZK0OSOT
         JEmSJEmSNmdkkiRJkiRJ0uaMTJIkSZIkSdqckUmSJEmSJEmbMzJJkiRJkiRpc0YmSZIkSZIkbc7IJEmS
@@ -386,4 +386,19 @@
         gg==
 </value>
   </data>
+  <metadata name="seansSaati.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="filmIsmi.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="olusturan.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="seansDili.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="seansSalonu.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

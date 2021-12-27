@@ -40,10 +40,16 @@ namespace CinemaLab
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.seansSaati = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.filmIsmi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.olusturan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.seansDili = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.seansSalonu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -134,15 +140,6 @@ namespace CinemaLab
             this.radioButton2.Text = "Orijinal";
             this.radioButton2.UseVisualStyleBackColor = false;
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(523, 253);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(539, 304);
-            this.listBox1.TabIndex = 6;
-            // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.CalendarTrailingForeColor = System.Drawing.Color.Green;
@@ -163,18 +160,81 @@ namespace CinemaLab
             this.label1.TabIndex = 11;
             this.label1.Text = "Tarih";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CausesValidation = false;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.seansSaati,
+            this.filmIsmi,
+            this.olusturan,
+            this.seansDili,
+            this.seansSalonu});
+            this.dataGridView1.Location = new System.Drawing.Point(452, 255);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.ShowCellErrors = false;
+            this.dataGridView1.ShowCellToolTips = false;
+            this.dataGridView1.ShowEditingIcon = false;
+            this.dataGridView1.ShowRowErrors = false;
+            this.dataGridView1.Size = new System.Drawing.Size(651, 270);
+            this.dataGridView1.TabIndex = 15;
+            // 
+            // seansSaati
+            // 
+            this.seansSaati.HeaderText = "Seans Saati";
+            this.seansSaati.Name = "seansSaati";
+            this.seansSaati.ReadOnly = true;
+            this.seansSaati.Width = 130;
+            // 
+            // filmIsmi
+            // 
+            this.filmIsmi.HeaderText = "Film İsmi";
+            this.filmIsmi.Name = "filmIsmi";
+            this.filmIsmi.ReadOnly = true;
+            this.filmIsmi.Width = 150;
+            // 
+            // olusturan
+            // 
+            this.olusturan.HeaderText = "OIuşturan";
+            this.olusturan.Name = "olusturan";
+            this.olusturan.ReadOnly = true;
+            this.olusturan.Width = 125;
+            // 
+            // seansDili
+            // 
+            this.seansDili.HeaderText = "Seans Tipi";
+            this.seansDili.Name = "seansDili";
+            this.seansDili.ReadOnly = true;
+            this.seansDili.Width = 85;
+            // 
+            // seansSalonu
+            // 
+            this.seansSalonu.HeaderText = "Seans Salonu";
+            this.seansSalonu.Name = "seansSalonu";
+            this.seansSalonu.ReadOnly = true;
+            // 
             // AddSeans
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.ClientSize = new System.Drawing.Size(1176, 747);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
@@ -189,6 +249,7 @@ namespace CinemaLab
             this.Text = "AddSeans";
             this.Load += new System.EventHandler(this.AddSeans_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,8 +265,13 @@ namespace CinemaLab
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn seansSaati;
+        private System.Windows.Forms.DataGridViewTextBoxColumn filmIsmi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn olusturan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn seansDili;
+        private System.Windows.Forms.DataGridViewTextBoxColumn seansSalonu;
     }
 }

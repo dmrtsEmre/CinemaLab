@@ -34,15 +34,21 @@ namespace CinemaLab
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.listBox2 = new System.Windows.Forms.ListBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salonTuru = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salonId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.koltukSayisi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1173, 633);
             this.pictureBox1.TabIndex = 0;
@@ -83,15 +89,6 @@ namespace CinemaLab
             this.radioButton1.Text = "3D Salon";
             this.radioButton1.UseVisualStyleBackColor = false;
             // 
-            // listBox2
-            // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 15;
-            this.listBox2.Location = new System.Drawing.Point(589, 268);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(478, 199);
-            this.listBox2.TabIndex = 12;
-            // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
@@ -106,13 +103,74 @@ namespace CinemaLab
             this.radioButton2.Text = "2D Salon";
             this.radioButton2.UseVisualStyleBackColor = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.CausesValidation = false;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.salonTuru});
+            this.dataGridView1.Location = new System.Drawing.Point(591, 270);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.ShowCellErrors = false;
+            this.dataGridView1.ShowCellToolTips = false;
+            this.dataGridView1.ShowEditingIcon = false;
+            this.dataGridView1.ShowRowErrors = false;
+            this.dataGridView1.Size = new System.Drawing.Size(476, 186);
+            this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Salon Numarası";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Koltuk Sayısı";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // salonTuru
+            // 
+            this.salonTuru.HeaderText = "Ekran Tipi";
+            this.salonTuru.Name = "salonTuru";
+            this.salonTuru.ReadOnly = true;
+            this.salonTuru.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // salonId
+            // 
+            this.salonId.HeaderText = "Salon ID";
+            this.salonId.Name = "salonId";
+            this.salonId.ReadOnly = true;
+            this.salonId.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // koltukSayisi
+            // 
+            this.koltukSayisi.HeaderText = "Koltuk Sayısı";
+            this.koltukSayisi.Name = "koltukSayisi";
+            this.koltukSayisi.ReadOnly = true;
+            this.koltukSayisi.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // AddSalon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1172, 626);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.listBox2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
@@ -126,6 +184,7 @@ namespace CinemaLab
             this.Text = "AddSalon";
             this.Load += new System.EventHandler(this.AddSalon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +199,11 @@ namespace CinemaLab
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salonTuru;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salonId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn koltukSayisi;
     }
 }
