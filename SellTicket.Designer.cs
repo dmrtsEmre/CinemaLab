@@ -483,6 +483,7 @@ namespace CinemaLab
             this.Name = "SellTicket";
             this.ShowIcon = false;
             this.Text = "SellTicker";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SellTicket_FormClosed);
             this.Load += new System.EventHandler(this.SellTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

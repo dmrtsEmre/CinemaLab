@@ -121,20 +121,26 @@
   <data name="Frame 10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Frame 10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ServerName" xml:space="preserve">
+    <value>DESKTOP-QI382NQ</value>
+    <comment>Bunu değiştir ulan amk</comment>
+  </data>
   <data name="AddFilm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AddFilm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AddFilm(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AddFilm(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AddFilm(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AddFilm(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AddFilm(5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AddFilm(5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ServerName" xml:space="preserve">
-    <value>DESKTOP-QI382NQ</value>
-    <comment>Bunu değiştir ulan amk</comment>
+  <data name="AddFilm(2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddFilm(2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="baseline_event_seat_black_24dp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\baseline_event_seat_black_24dp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddFilm(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddFilm(1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group 7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -9,12 +9,10 @@ namespace CinemaLab
 {
     public partial class SellTicket : Form
     {
-
-        bool bitti = false;
         int secilenKoltuk = -1;
         List<Seans> seanslar = new List<Seans>();
         List<(int, int, int)> seciliMenuler = new List<(int, int, int)>(); //MenuId, adet, Fiyat
-
+        private Form mainForm = null;
 
         public SellTicket()
         {
@@ -36,17 +34,26 @@ namespace CinemaLab
             for (int i = 1; i < 21; i++)
             {
                 Button koltukButon = (Button)this.Controls.Find("button" + i.ToString(), true)[0];
+                Button remoteButon = (Button)mainForm.Controls.Find("button" + i.ToString(), true)[0];
+
                 if (i == secilenKoltuk)
                 {
+                    remoteButon.BackColor = Color.FromArgb(100, 0, 200, 0);
                     koltukButon.BackColor = Color.FromArgb(100, 0, 200, 0);
                 }
                 else if (aktifSeans.alinanKoltuklar.Contains(i))
                 {
+                    remoteButon.BackColor = Color.FromArgb(100, 255, 0, 0);
+                    remoteButon.Enabled = false;
+
                     koltukButon.BackColor = Color.FromArgb(100, 255, 0, 0);
                     koltukButon.Enabled = false;
                 }
                 else
                 {
+                    remoteButon.Enabled = true;
+                    remoteButon.BackColor = Color.FromArgb(100, 6, 38, 57);
+
                     koltukButon.Enabled = true;
                     koltukButon.BackColor = Color.FromArgb(100, 6, 38, 57);
                 }
@@ -78,6 +85,8 @@ namespace CinemaLab
 
         private void SellTicket_Load(object sender, System.EventArgs e)
         {
+            mainForm = new KoltukEkranı();
+            mainForm.Show();
             comboBox1.SelectedIndex = 0;
             SqlConnection conn = new SqlConnection(Config.connection_string);
             conn.Open();
@@ -110,7 +119,6 @@ namespace CinemaLab
                 comboBox3.Items.Add("Seans: " + seans_id + " : " + seans_reader.GetString("filAdi").Split("=")[0]);
             }
             seans_reader.Close();
-
             comboBox3.SelectedIndex = 0;
             comboBox3.SelectedText = "Seans: " + (seanslar[0].seansId.ToString());
 
@@ -183,7 +191,13 @@ namespace CinemaLab
                 conn.Close();
                 MessageBox.Show("Bilet Satışı Başarılı");
                 this.Close();
+                mainForm.Close();
             }
+        }
+
+        private void SellTicket_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            mainForm.Close();
         }
     }
 }

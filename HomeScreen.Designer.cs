@@ -40,15 +40,19 @@ namespace CinemaLab
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.seansFoto = new System.Windows.Forms.PictureBox();
+            this.salon = new System.Windows.Forms.Label();
+            this.date = new System.Windows.Forms.Label();
+            this.filmAdi = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seansFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -179,28 +183,13 @@ namespace CinemaLab
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(38)))), ((int)(((byte)(57)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(525, 172);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(185, 46);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Seanslar Ekranı";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(38)))), ((int)(((byte)(57)))));
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(525, 264);
+            this.button7.Location = new System.Drawing.Point(530, 170);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(185, 46);
             this.button7.TabIndex = 11;
@@ -254,13 +243,63 @@ namespace CinemaLab
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button8.Location = new System.Drawing.Point(525, 360);
+            this.button8.Location = new System.Drawing.Point(530, 264);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(185, 46);
             this.button8.TabIndex = 15;
             this.button8.Text = "Koltuk Ekranı";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // seansFoto
+            // 
+            this.seansFoto.BackColor = System.Drawing.Color.White;
+            this.seansFoto.Location = new System.Drawing.Point(829, 170);
+            this.seansFoto.Name = "seansFoto";
+            this.seansFoto.Size = new System.Drawing.Size(243, 386);
+            this.seansFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.seansFoto.TabIndex = 16;
+            this.seansFoto.TabStop = false;
+            // 
+            // salon
+            // 
+            this.salon.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.salon.BackColor = System.Drawing.Color.White;
+            this.salon.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.salon.ForeColor = System.Drawing.Color.Black;
+            this.salon.Location = new System.Drawing.Point(847, 559);
+            this.salon.Name = "salon";
+            this.salon.Size = new System.Drawing.Size(208, 27);
+            this.salon.TabIndex = 2;
+            this.salon.Text = "salon";
+            this.salon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // date
+            // 
+            this.date.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.date.BackColor = System.Drawing.Color.White;
+            this.date.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.date.ForeColor = System.Drawing.Color.Black;
+            this.date.Location = new System.Drawing.Point(847, 596);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(208, 27);
+            this.date.TabIndex = 1;
+            this.date.Text = "date";
+            this.date.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // filmAdi
+            // 
+            this.filmAdi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.filmAdi.BackColor = System.Drawing.Color.White;
+            this.filmAdi.Font = new System.Drawing.Font("Montserrat", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.filmAdi.ForeColor = System.Drawing.Color.Black;
+            this.filmAdi.Location = new System.Drawing.Point(847, 140);
+            this.filmAdi.Name = "filmAdi";
+            this.filmAdi.Size = new System.Drawing.Size(208, 27);
+            this.filmAdi.TabIndex = 0;
+            this.filmAdi.Text = "filmAdi";
+            this.filmAdi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HomeScreen
             // 
@@ -268,12 +307,15 @@ namespace CinemaLab
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(196)))), ((int)(((byte)(200)))));
             this.ClientSize = new System.Drawing.Size(1143, 705);
+            this.Controls.Add(this.date);
+            this.Controls.Add(this.salon);
+            this.Controls.Add(this.seansFoto);
+            this.Controls.Add(this.filmAdi);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -294,6 +336,7 @@ namespace CinemaLab
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seansFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,11 +354,15 @@ namespace CinemaLab
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.PictureBox seansFoto;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label salon;
+        private System.Windows.Forms.Label date;
+        private System.Windows.Forms.Label filmAdi;
     }
 }

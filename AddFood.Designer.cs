@@ -46,7 +46,7 @@ namespace CinemaLab
             this.pictureBox1.Image = global::CinemaLab.Properties.Resources.AddFilm_5_;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(976, 461);
+            this.pictureBox1.Size = new System.Drawing.Size(988, 487);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -141,7 +141,7 @@ namespace CinemaLab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(976, 461);
+            this.ClientSize = new System.Drawing.Size(989, 485);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);

@@ -138,6 +138,7 @@ namespace CinemaLab
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Location = new System.Drawing.Point(39, 213);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(274, 16);
             this.textBox2.TabIndex = 8;
             // 
@@ -157,7 +158,11 @@ namespace CinemaLab
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "GirisEkrani";
+            this.ShowIcon = false;
             this.Text = "GirisEkrani";
             this.Load += new System.EventHandler(this.GirisEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

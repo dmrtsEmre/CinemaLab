@@ -140,7 +140,7 @@ namespace CinemaLab
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(196)))), ((int)(((byte)(200)))));
-            this.ClientSize = new System.Drawing.Size(986, 491);
+            this.ClientSize = new System.Drawing.Size(1018, 491);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);

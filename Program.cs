@@ -14,7 +14,7 @@ namespace CinemaLab
         public static int splashScreenTimeout = 500;
 
         //Altda belirtilen veriler ile otomatik giriş yap
-        public static bool autoLogin = false;
+        public static bool autoLogin = true;
 
         //0 Admin, 1: Personel
         public static int account_type = 0;

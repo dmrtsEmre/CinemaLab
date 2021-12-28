@@ -103,9 +103,29 @@ namespace CinemaLab.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap baseline_event_seat_black_24dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_event_seat_black_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Frame_10 {
             get {
                 object obj = ResourceManager.GetObject("Frame 10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_7 {
+            get {
+                object obj = ResourceManager.GetObject("Group 7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

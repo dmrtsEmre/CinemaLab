@@ -53,6 +53,7 @@ namespace CinemaLab
                         "Salon " + seans_reader.GetInt32("seansSalonu")
                     );
             }
+            conn.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)

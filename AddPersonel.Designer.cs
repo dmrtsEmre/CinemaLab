@@ -37,11 +37,11 @@ namespace CinemaLab
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.personelMail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.personelSifre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.personelTip = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personelMail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.personelSifre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +51,7 @@ namespace CinemaLab
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-4, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1179, 984);
+            this.pictureBox1.Size = new System.Drawing.Size(1179, 790);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -134,18 +134,6 @@ namespace CinemaLab
             this.dataGridView1.TabIndex = 15;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // personelMail
-            // 
-            this.personelMail.HeaderText = "Personel Mail";
-            this.personelMail.Name = "personelMail";
-            this.personelMail.ReadOnly = true;
-            // 
-            // personelSifre
-            // 
-            this.personelSifre.HeaderText = "Personel Şifre";
-            this.personelSifre.Name = "personelSifre";
-            this.personelSifre.ReadOnly = true;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.HeaderText = "Personel Mail";
@@ -169,12 +157,24 @@ namespace CinemaLab
             this.personelTip.ReadOnly = true;
             this.personelTip.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
+            // personelMail
+            // 
+            this.personelMail.HeaderText = "Personel Mail";
+            this.personelMail.Name = "personelMail";
+            this.personelMail.ReadOnly = true;
+            // 
+            // personelSifre
+            // 
+            this.personelSifre.HeaderText = "Personel Şifre";
+            this.personelSifre.Name = "personelSifre";
+            this.personelSifre.ReadOnly = true;
+            // 
             // AddPersonel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1170, 752);
+            this.ClientSize = new System.Drawing.Size(1170, 785);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBox2);
