@@ -46,11 +46,12 @@ namespace CinemaLab
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -285,18 +286,6 @@ namespace CinemaLab
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button4
-            // 
-            this.button4.AutoSize = true;
-            this.button4.Image = global::CinemaLab.Properties.Resources.baseline_event_seat_black_24dp;
-            this.button4.Location = new System.Drawing.Point(342, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(107, 97);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Koltuk 4";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
             this.button3.AutoSize = true;
@@ -333,6 +322,18 @@ namespace CinemaLab
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // button4
+            // 
+            this.button4.AutoSize = true;
+            this.button4.Image = global::CinemaLab.Properties.Resources.baseline_event_seat_black_24dp;
+            this.button4.Location = new System.Drawing.Point(342, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(107, 97);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Koltuk 4";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CinemaLab.Properties.Resources.Group_7;
@@ -342,12 +343,22 @@ namespace CinemaLab
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Montserrat", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(393, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(292, 37);
+            this.label1.TabIndex = 2;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // KoltukEkranı
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(196)))), ((int)(((byte)(196)))));
             this.ClientSize = new System.Drawing.Size(963, 607);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -390,5 +401,6 @@ namespace CinemaLab
         public System.Windows.Forms.Button button3;
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Label label1;
     }
 }

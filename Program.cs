@@ -27,6 +27,7 @@ namespace CinemaLab
 
         //Database url
         public static string connection_string = "Data Source=localhost\\SQLEXPRESS;Database=CinemaLab;Integrated Security=SSPI";
+        public static Form koltukForm = new KoltukEkranı();
     }
 
     static class Program

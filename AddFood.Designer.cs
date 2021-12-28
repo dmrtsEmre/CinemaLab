@@ -153,6 +153,7 @@ namespace CinemaLab
             this.MinimizeBox = false;
             this.Name = "AddFood";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "AddFood";
             this.Load += new System.EventHandler(this.AddFood_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

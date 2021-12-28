@@ -12,6 +12,9 @@ namespace CinemaLab
 
         private void KoltukEkranı_Load(object sender, EventArgs e)
         {
+            label1.Width = this.Width;
+            label1.Left = 0;
+            label1.Top = this.Height / 10;
             tableLayoutPanel1.Width = this.Width / 2;
             tableLayoutPanel1.Height = this.Height / 2;
             tableLayoutPanel1.Left = (this.Width / 2) - (tableLayoutPanel1.Width / 2);

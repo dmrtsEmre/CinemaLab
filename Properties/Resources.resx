@@ -123,7 +123,7 @@
   </data>
   <data name="ServerName" xml:space="preserve">
     <value>DESKTOP-QI382NQ</value>
-    <comment>Bunu değiştir ulan amk</comment>
+    <comment>Bunu değiştir ulan</comment>
   </data>
   <data name="AddFilm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AddFilm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -331,6 +331,7 @@ namespace CinemaLab
             this.MinimizeBox = false;
             this.Name = "HomeScreen";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "Ana Menü";
             this.Load += new System.EventHandler(this.HomeScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

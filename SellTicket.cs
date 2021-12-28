@@ -12,8 +12,6 @@ namespace CinemaLab
         int secilenKoltuk = -1;
         List<Seans> seanslar = new List<Seans>();
         List<(int, int, int)> seciliMenuler = new List<(int, int, int)>(); //MenuId, adet, Fiyat
-        private Form mainForm = null;
-
         public SellTicket()
         {
             InitializeComponent();
@@ -31,10 +29,13 @@ namespace CinemaLab
             int menuToplam = seciliMenuler.Aggregate(0, (acc, x) => acc + (x.Item3));
             Seans aktifSeans = seanslar[selected_seans];
             button21.Text = "Ödeme: " + (aktifSeans.fiyat + menuToplam) + "tl";
+            Label label = (Label)Config.koltukForm.Controls.Find("label1", true)[0];
+            label.Text = "Salon: " + aktifSeans.seansSalonu + " " + aktifSeans.filmAdi;
+
             for (int i = 1; i < 21; i++)
             {
                 Button koltukButon = (Button)this.Controls.Find("button" + i.ToString(), true)[0];
-                Button remoteButon = (Button)mainForm.Controls.Find("button" + i.ToString(), true)[0];
+                Button remoteButon = (Button)Config.koltukForm.Controls.Find("button" + i.ToString(), true)[0];
 
                 if (i == secilenKoltuk)
                 {
@@ -85,8 +86,6 @@ namespace CinemaLab
 
         private void SellTicket_Load(object sender, System.EventArgs e)
         {
-            mainForm = new KoltukEkranı();
-            mainForm.Show();
             comboBox1.SelectedIndex = 0;
             SqlConnection conn = new SqlConnection(Config.connection_string);
             conn.Open();
@@ -111,6 +110,7 @@ namespace CinemaLab
                     seansId = seans_id,
                     seansSalonu = seans_reader.GetInt32("seansSalonu"),
                     filmId = seans_reader.GetInt32("filmId"),
+                    filmAdi = seans_reader.GetString("filAdi").Split("=")[0],
                     fiyat = seans_reader.GetInt32("fiyat"),
                     alinanKoltuklar = new List<int>()
                 };
@@ -191,13 +191,11 @@ namespace CinemaLab
                 conn.Close();
                 MessageBox.Show("Bilet Satışı Başarılı");
                 this.Close();
-                mainForm.Close();
             }
         }
 
         private void SellTicket_FormClosed(object sender, FormClosedEventArgs e)
         {
-            mainForm.Close();
         }
     }
 }

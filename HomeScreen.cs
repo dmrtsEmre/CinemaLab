@@ -17,7 +17,6 @@ namespace CinemaLab
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             if (Config.account_type == 0)
             {
                 Form seanslar = new AddSeans();
@@ -88,6 +87,7 @@ namespace CinemaLab
 
         private void HomeScreen_Load(object sender, EventArgs e)
         {
+            Config.koltukForm.Show();
             label5.Text = Config.account_mail;
             SqlConnection conn = new SqlConnection(Config.connection_string);
             conn.Open();

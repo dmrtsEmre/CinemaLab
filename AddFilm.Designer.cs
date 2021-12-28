@@ -152,6 +152,7 @@ namespace CinemaLab
             this.MinimizeBox = false;
             this.Name = "AddFilm";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "AddFilm";
             this.Load += new System.EventHandler(this.AddFilm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
