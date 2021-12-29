@@ -188,7 +188,7 @@ namespace CinemaLab
             this.Name = "AddPersonel";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "AddPersonel";
+            this.Text = "Personel Ekle";
             this.Load += new System.EventHandler(this.AddPersonel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

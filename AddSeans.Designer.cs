@@ -246,7 +246,7 @@ namespace CinemaLab
             this.Name = "AddSeans";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "AddSeans";
+            this.Text = "Seans Ekle";
             this.Load += new System.EventHandler(this.AddSeans_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

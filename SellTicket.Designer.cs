@@ -484,7 +484,7 @@ namespace CinemaLab
             this.Name = "SellTicket";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "SellTicker";
+            this.Text = "Bilet Satma";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SellTicket_FormClosed);
             this.Load += new System.EventHandler(this.SellTicket_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

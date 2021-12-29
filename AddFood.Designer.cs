@@ -154,7 +154,7 @@ namespace CinemaLab
             this.Name = "AddFood";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "AddFood";
+            this.Text = "Yemek EKle";
             this.Load += new System.EventHandler(this.AddFood_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

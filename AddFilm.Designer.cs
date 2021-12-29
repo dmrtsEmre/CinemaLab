@@ -153,7 +153,7 @@ namespace CinemaLab
             this.Name = "AddFilm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "AddFilm";
+            this.Text = "Film Ekle";
             this.Load += new System.EventHandler(this.AddFilm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -182,7 +182,7 @@ namespace CinemaLab
             this.Name = "AddSalon";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "AddSalon";
+            this.Text = "Salonlar";
             this.Load += new System.EventHandler(this.AddSalon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

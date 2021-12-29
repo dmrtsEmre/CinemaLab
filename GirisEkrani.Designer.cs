@@ -164,7 +164,7 @@ namespace CinemaLab
             this.Name = "GirisEkrani";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "GirisEkrani";
+            this.Text = "Giriş Yap";
             this.Load += new System.EventHandler(this.GirisEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
