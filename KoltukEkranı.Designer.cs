@@ -376,12 +376,12 @@ namespace CinemaLab
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "KoltukEkranı";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "KoltukEkranı";
-            this.TopMost = true;
+            this.Text = "Kullanıcı Paneli";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.KoltukEkranı_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -183,6 +183,7 @@ namespace CinemaLab
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Salonlar";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddSalon_FormClosed);
             this.Load += new System.EventHandler(this.AddSalon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

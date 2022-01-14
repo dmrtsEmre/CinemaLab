@@ -98,14 +98,9 @@ dateTimePicker1.Value.ToString("HH:mm:ss"));
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void AddSeans_FormClosed(object sender, FormClosedEventArgs e)
         {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
+            Config.mainForm.Show();
         }
     }
 }

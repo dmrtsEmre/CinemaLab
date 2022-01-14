@@ -196,6 +196,7 @@ namespace CinemaLab
 
         private void SellTicket_FormClosed(object sender, FormClosedEventArgs e)
         {
+            Config.mainForm.Show();
         }
     }
 }

@@ -103,6 +103,11 @@ namespace CinemaLab
         {
 
         }
+
+        private void AddPersonel_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Config.mainForm.Show();
+        }
     }
 }
 

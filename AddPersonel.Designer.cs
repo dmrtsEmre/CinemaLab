@@ -189,6 +189,7 @@ namespace CinemaLab
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Personel Ekle";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddPersonel_FormClosed);
             this.Load += new System.EventHandler(this.AddPersonel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

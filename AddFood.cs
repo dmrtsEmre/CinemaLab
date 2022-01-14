@@ -67,5 +67,10 @@ namespace CinemaLab
             reader.Close();
             conn.Close();
         }
+
+        private void AddFood_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Config.mainForm.Show();
+        }
     }
 }

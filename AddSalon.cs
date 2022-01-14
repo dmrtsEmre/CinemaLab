@@ -92,5 +92,10 @@ namespace CinemaLab
         {
 
         }
+
+        private void AddSalon_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Config.mainForm.Show();
+        }
     }
 }

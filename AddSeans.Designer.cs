@@ -60,7 +60,6 @@ namespace CinemaLab
             this.pictureBox1.Size = new System.Drawing.Size(1175, 783);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // comboBox1
             // 
@@ -78,7 +77,6 @@ namespace CinemaLab
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(127, 23);
             this.dateTimePicker1.TabIndex = 3;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // button1
             // 
@@ -247,6 +245,7 @@ namespace CinemaLab
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Seans Ekle";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddSeans_FormClosed);
             this.Load += new System.EventHandler(this.AddSeans_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

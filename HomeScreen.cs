@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,11 +19,12 @@ namespace CinemaLab
             if (Config.account_type == 0)
             {
                 Form seanslar = new AddSeans();
+                this.Hide();
                 seanslar.Show();
             }
             else
             {
-                MessageBox.Show("Giriş Başarısız");
+                MessageBox.Show("Bu İşlem İçin Yetkiniz Bulunmamaktadır.");
             }
         }
 
@@ -33,6 +33,7 @@ namespace CinemaLab
             if (Config.account_type == 0)
             {
                 Form yiyecek = new AddFood();
+                this.Hide();
                 yiyecek.Show();
             }
             else
@@ -46,6 +47,7 @@ namespace CinemaLab
             if (Config.account_type == 0)
             {
                 Form salonlar = new AddSalon();
+                this.Hide();
                 salonlar.Show();
             }
             else
@@ -59,6 +61,7 @@ namespace CinemaLab
             if (Config.account_type == 0)
             {
                 Form personel = new AddPersonel();
+                this.Hide();
                 personel.Show();
             }
             else
@@ -67,26 +70,19 @@ namespace CinemaLab
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button7_Click(object sender, EventArgs e)
         {
             Form bilet = new SellTicket();
+            this.Hide();
             bilet.Show();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
         List<AnaSeans> seanslar = new List<AnaSeans>();
         int goruntuluSeans = 0;
 
         private void HomeScreen_Load(object sender, EventArgs e)
         {
+            Config.mainForm = this;
             Config.koltukForm.Show();
             label5.Text = Config.account_mail;
             SqlConnection conn = new SqlConnection(Config.connection_string);
@@ -122,7 +118,8 @@ namespace CinemaLab
             if (goruntuluSeans == (seanslar.Count - 1))
             {
                 goruntuluSeans = 0;
-            } else
+            }
+            else
             {
                 goruntuluSeans++;
             }
@@ -130,25 +127,12 @@ namespace CinemaLab
             seansDeğiştir();
         }
 
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            if (Config.account_type == 0)
-            {
-                Form film = new AddFilm();
-                film.Show();
-            }
-            else
-            {
-                MessageBox.Show("Bu İşlem İçin Yetkiniz Bulunmamaktadır.");
-            }
-        }
-
         private void button6_Click_1(object sender, EventArgs e)
         {
             if (Config.account_type == 0)
             {
                 Form film = new AddFilm();
+                this.Hide();
                 film.Show();
             }
             else
@@ -157,14 +141,21 @@ namespace CinemaLab
             }
         }
 
-        private void salon_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button8_Click(object sender, EventArgs e)
         {
-            
+            if (Config.koltukForm.Visible)
+            {
+                Config.koltukForm.Hide();
+            }
+            else
+            {
+                Config.koltukForm.Show();
+            }
+        }
+
+        private void HomeScreen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
